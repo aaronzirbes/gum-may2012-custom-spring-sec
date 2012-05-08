@@ -113,7 +113,8 @@
 				<li>grails-app/conf/Config.groovy</li>
 				<li>grails-app/views/login/auth.gsp</li>
 			</ul>
-			<p>For a full list, see the GitHub commit history.</p>
+			<p>For a full list, see the <a href="https://github.com/aaronzirbes/gum-may2012-custom-spring-sec/commits/master">GitHub commit history</a.</p>
+			<p>The source is available <a href="https://github.com/aaronzirbes/gum-may2012-custom-spring-sec">here</a>.</p>
 
 			<div id="controller-list" role="navigation">
 				<h2>Things to do:</h2>
