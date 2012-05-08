@@ -4,6 +4,8 @@ class Role {
 
 	String authority
 
+	String toString() { authority }
+
 	static mapping = {
 		cache true
 	}

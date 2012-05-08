@@ -71,6 +71,13 @@ class LoginController {
 			// have cookie but the page is guarded with IS_AUTHENTICATED_FULLY
 			redirect action: 'full', params: params
 		}
+		def principal = springSecurityService.principal
+		def roles = "None"
+		if (! (principal instanceof String) ) {
+			roles = principal?.authorities?.collect{ it.toString() }
+		}
+
+		[ roles: roles ]
 	}
 
 	/**

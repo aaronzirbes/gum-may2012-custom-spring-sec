@@ -98,10 +98,13 @@
 				<label for='username'><g:message code="springSecurity.login.username.label"/>:</label>
 				<input type='text' class='text_' name='j_username' id='username'/>
 			</p>
-
 			<p>
-				<label for='password'><g:message code="springSecurity.login.password.label"/>:</label>
-				<input type='password' class='text_' name='j_password' id='password'/>
+				<label for='quest'><g:message code="springSecurity.login.quest.label"/>:</label>
+				<input type='text' class='text_' name='j_quest' id='quest'/>
+			</p>
+			<p>
+				<label for='favoriteColor'><g:message code="springSecurity.login.favoriteColor.label"/>:</label>
+				<input type='text' class='text_' name='j_favoriteColor' id='favoriteColor'/>
 			</p>
 
 			<p id="remember_me_holder">
