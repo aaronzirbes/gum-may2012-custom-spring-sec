@@ -1,5 +1,4 @@
 import mn.groovy.BridgeOfDeathAuthenticationProvider
-import mn.groovy.HolyGrailAuthenticationToken
 import mn.groovy.KeeperOfTheBridgeFilter
 
 import org.codehaus.groovy.grails.plugins.springsecurity.SpringSecurityUtils

@@ -57,14 +57,14 @@ class BridgeOfDeathAuthenticationProvider implements AuthenticationProvider {
 					throw new BadCredentialsException('Bad quest', userDetails)
 				}
 				if (authentication.credentials == null) {
-					log.debug 'Authentication failed: no credentials provided'
+					log.debug 'Authentication failed: no favorite color provided'
 					throw new BadCredentialsException('Bad credentials', userDetails)
 				}
 				if (knight.quest.toLowerCase() != quest.toLowerCase()) {
-					throw new BadCredentialsException('Your quest is not noble enought', userDetails)
+					throw new BadCredentialsException('Your quest is not noble enough', userDetails)
 				}
 				if (knight.favoriteColor.toLowerCase() != favoriteColor.toLowerCase()) {
-					throw new BadCredentialsException('Your quest is not noble enought', userDetails)
+					throw new BadCredentialsException('That is not your favorite color', userDetails)
 				}
 
 				// run injected Post-Auth checks

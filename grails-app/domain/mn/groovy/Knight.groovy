@@ -4,9 +4,13 @@ class Knight {
 
 	transient springSecurityService
 
+	// What is your name?
 	String username
-	String favoriteColor
+	// What is your quest?
 	String quest
+	// What is your favorite color?
+	String favoriteColor
+
 	boolean enabled
 	boolean accountExpired
 	boolean accountLocked
