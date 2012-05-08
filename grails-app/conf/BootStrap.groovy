@@ -7,6 +7,7 @@ class BootStrap {
     def init = { servletContext ->
 
 		def kotrt = new Role(authority:'ROLE_KNIGHT_OF_THE_ROUND_TABLE')
+		def koa = new Role(authority:'ROLE_KING_OF_ARGH')
 		if (!kotrt.save()) {
 			println "Failed to save the Knights of the Round Table"
 			println kotrt.errors
@@ -19,7 +20,10 @@ class BootStrap {
 			println "Failed to save Sir Launcelot"
 			println sirLauncelot.errors
 		} else {
+			// Launcelot is a Knight
 			KnightRole.create(sirLauncelot, kotrt, false)
+			// Launcelot is a King
+			KnightRole.create(sirLauncelot, koa, false)
 		}
 		def sirRobin = new Knight(username:'Sir Robin', 
 			favoriteColor:'Yellow', 
