@@ -4,7 +4,7 @@
 		<meta name="layout" content="main"/>
 		<title>The Castle Aggh!</title>
 	</head>
-	<body>
+	<body> 
 		<h1>The Castle Aggh!</h1>
 		<p>You have entered the Castle Aggh, what will you do?
 		<ul style="margin-left: 2em;">
