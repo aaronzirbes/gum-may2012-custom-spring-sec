@@ -54,19 +54,8 @@
 		padding-right: 10px;
 	}
 
-	#login #remember_me_holder {
-		padding-left: 120px;
-	}
-
 	#login #submit {
 		margin-left: 15px;
-	}
-
-	#login #remember_me_holder label {
-		float: none;
-		margin-left: 0;
-		text-align: left;
-		width: 200px
 	}
 
 	#login .inner .login_message {
@@ -105,11 +94,6 @@
 			<p>
 				<label for='favoriteColor'><g:message code="springSecurity.login.favoriteColor.label"/>:</label>
 				<input type='text' class='text_' name='j_favoriteColor' id='favoriteColor'/>
-			</p>
-
-			<p id="remember_me_holder">
-				<input type='checkbox' class='chk' name='${rememberMeParameter}' id='remember_me' <g:if test='${hasCookie}'>checked='checked'</g:if>/>
-				<label for='remember_me'><g:message code="springSecurity.login.remember.me.label"/></label>
 			</p>
 
 			<p>

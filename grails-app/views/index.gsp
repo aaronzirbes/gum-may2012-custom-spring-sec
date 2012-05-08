@@ -103,18 +103,23 @@
 			</ul>
 		</div>
 		<div id="page-body" role="main">
-			<h1>Welcome to Grails</h1>
-			<p>Congratulations, you have successfully started your first Grails application! At the moment
-			   this is the default page, feel free to modify it to either redirect to a controller or display whatever
-			   content you may choose. Below is a list of controllers that are currently deployed in this application,
-			   click on each to execute its default action:</p>
+			<h1>GUM Demo App - Customizing Spring Security</h1>
+			<p>The main artifacts that were involved in customizing Spring Security are:</p>
+			<ul>
+				<li>src/groovy/mn/groovy/BridgeOfDeathAuthenticationProvider.groovy</li>
+				<li>src/groovy/mn/groovy/HolyGrailAuthenticationToken.groovy</li>
+				<li>src/groovy/mn/groovy/KeeperOfTheBridgeFilter.groovy</li>
+				<li>grails-app/conf/spring/resources.groovy</li>
+				<li>grails-app/conf/Config.groovy</li>
+				<li>grails-app/views/login/auth.gsp</li>
+			</ul>
+			<p>For a full list, see the GitHub commit history.</p>
 
 			<div id="controller-list" role="navigation">
-				<h2>Available Controllers:</h2>
+				<h2>Things to do:</h2>
 				<ul>
-					<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-						<li class="controller"><g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link></li>
-					</g:each>
+						<li class="controller"><g:link controller="knight">View Knights</g:link></li>
+						<li class="controller"><g:link controller="castleAggh">Enter the Castle</g:link></li>
 				</ul>
 			</div>
 		</div>
